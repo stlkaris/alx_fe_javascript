@@ -2,9 +2,17 @@
 document.addEventListener('DOMContentLoaded', () => {
   const storedQuotes = JSON.parse(localStorage.getItem('quotes'));
     const quotes = storedQuotes || [
-      { text: "The best way to predict the future is to invent it.", category: "Inspiration" },
-      { text: "Life is 10% what happens to us and 90% how we react to it.", category: "Life" },
-      { text: "Good artists copy, great artists steal.", category: "Creativity" }
+      {text: "Genius is one percent inspiration and{ ninety-nine percent perspiration.", category:"inspirational"},
+{text: "You can observe a lot just by watching.", category: "Motivational"},
+{text: "A house divided against itself cannot stand.", category: "life"},
+{text: "Difficulties increase the nearer we get to the goal.", category: "inspirational"},
+{text: "Fate is in your hands and no one elses.", category: "life"},
+{text: "Be the chief but never the lord.", category:"motivational"},
+{text: "Nothing happens unless first we dream.", category: "motivational"},
+{text: "Well begun is half done.", category: "inspirational"},
+{ text: "The best way to predict the future is to invent it.", category: "Inspiration" },
+{ text: "Life is 10% what happens to us and 90% how we react to it.", category: "Life" },
+{ text: "Good artists copy, great artists steal.", category: "Creativity" }
     ];
   
     const quoteDisplay = document.getElementById('quoteDisplay');
