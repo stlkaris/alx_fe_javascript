@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
       .catch(error => console.error('Error syncing to server:', error));
   };
 
-  const fetchFromServer = () => {
+  const fetchQuoteFromServer = () => {
     fetch(apiURL)
       .then(response => response.json())
       .then(data => {
@@ -102,6 +102,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Fetch data from the server periodically
-  setInterval(fetchFromServer, 60000); // every 60 seconds
+  setInterval(fetchQuoteFromServer, 60000); // every 60 seconds
 });
 
