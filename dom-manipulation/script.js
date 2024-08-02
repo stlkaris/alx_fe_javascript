@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const showRandomQuote = () => {
       const randomIndex = Math.floor(Math.random() * quotes.length);
       const quote = quotes[randomIndex];
-      quoteDisplay.textContent = `"${quote.text}" - ${quote.category}`;
+      quoteDisplay.innerHTML = `"${quote.text}" - ${quote.category}`;
       sessionStorage.setItem('lastViewedQuote', JSON.stringify(quote))
     };
   
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const lastViewedQuote = JSON.parse(sessionStorage.getItem('lastViewedQuote'))
     if(lastViewedQuote) {
-      quoteDisplay.textContent = `"${lastViewedQuote.text}" - ${lastViewedQuote.category}`;
+      quoteDisplay.innerHTML = `"${lastViewedQuote.text}" - ${lastViewedQuote.category}`;
     } else {
       showRandomQuote();
     }
