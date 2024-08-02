@@ -1,5 +1,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
+
   const storedQuotes = JSON.parse(localStorage.getItem('quotes'));
     const quotes = storedQuotes || [
       {text: "Genius is one percent inspiration and{ ninety-nine percent perspiration.", category:"inspirational"},
