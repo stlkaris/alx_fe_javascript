@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const exportButton = document.getElementById('exportButton');
 
     function saveQuotes () {
-      localStorage.setItem('quotes', JSON.stringify(quotes));
+      localStorage.setItem ('quotes', JSON.stringify(quotes));
     }; 
   
     const showRandomQuote = () => {
